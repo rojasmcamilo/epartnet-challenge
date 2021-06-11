@@ -228,29 +228,94 @@ body{
 
 footer{
   background-color:rgba(33,33,33,255);
-  padding-top: 30px;
+  padding: 3% 5%;
+  
 }
 
 footer section{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5%;
+  
 }
 
-footer div h2{
+footer section div:nth-child(2){
+  width: 14%;
+}
+
+footer div h5{
   color: rgba(220,234,9,255) ;
   text-transform: uppercase;
   font-weight: lighter;
+  font-size: 18px;
+  text-align: center;
+}
+
+footer div:nth-child(2) h5{
+  line-height: 20px;
 }
 
 footer div ul li{
   text-decoration: none;
   list-style: none;
-  color: white
-  ;
+  color: white;
+  line-height: 140%;
 }
 
 footer div ul li a{
   color: white;
   text-decoration: none;
+}
+
+footer div ul li:first-letter{
+  text-transform: uppercase;
+}
+
+.newsletter-section{
+  width: 30%;
+}
+
+.newsletter-section input:first-child{
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.newsletter-section label{
+  color: white;
+  font-size: 18px;
+}
+
+.newsletter-section label:first-letter{
+  text-transform: uppercase;
+}
+
+.newsletter-section button{
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(220,234,9,255);
+  font-size: 18px;
+  padding: 15px 35px 4px 35px; 
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.newsletter-section h6{
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.newsletter-section h6::first-letter{
+  text-transform: uppercase;
+}
+.developedby-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  padding-top: 50px;
 }
